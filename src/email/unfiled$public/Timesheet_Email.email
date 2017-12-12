@@ -1,0 +1,21 @@
+Hi, {!Timesheet__c.Contact__c}!
+This is the information about your timesheet:
+
+Start Date: {!Timesheet__c.Start_Date__c}
+End Date: {!Timesheet__c.End_Date__c}
+Type: {!Timesheet__c.Type__c}
+Details: {!Timesheet__c.Type_Details__c}
+
+Monday Hours: {!Timesheet__c.Monday__c}
+Tuesday Hours: {!Timesheet__c.Tuesday__c}
+Wednesday Hours: {!Timesheet__c.Wednesday__c}
+Thursday Hours: {!Timesheet__c.Thursday__c}
+Friday Hours: {!Timesheet__c.Friday__c}
+
+Hour rate: {!Timesheet__c.Hour_Rate__c}
+Gross Pay: {!Timesheet__c.Gross_Pay__c}
+Taxes: {!Timesheet__c.Taxes__c}
+Comments: {!Timesheet__c.Comments__c}
+
+Submitted: {!Timesheet__c.Submitted__c}
+Timesheet Status: {!Timesheet__c.Timesheet_Status__c}

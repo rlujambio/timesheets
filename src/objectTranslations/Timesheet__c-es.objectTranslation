@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timesheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timesheets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Timesheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday --></label>
+        <name>Friday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Pay --></label>
+        <name>Gross_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour Rate --></label>
+        <name>Hour_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday --></label>
+        <name>Monday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes --></label>
+        <name>Taxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday --></label>
+        <name>Thursday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timesheet Status --></label>
+        <name>Timesheet_Status__c</name>
+        <picklistValues>
+            <masterLabel>APPROVED</masterLabel>
+            <translation><!-- APPROVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT SUBMITTED</masterLabel>
+            <translation><!-- NOT SUBMITTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REJECTED</masterLabel>
+            <translation><!-- REJECTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUBMITTED</masterLabel>
+            <translation><!-- SUBMITTED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday --></label>
+        <name>Tuesday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Details --></label>
+        <name>Type_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type from the list or select other to enter a new one --></help>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTO</masterLabel>
+            <translation><!-- PTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation><!-- Regular --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wednesday --></label>
+        <name>Wednesday__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Timesheet Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General information --></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label><!-- Rate --></label>
+            <section>Rate</section>
+        </sections>
+        <sections>
+            <label><!-- Time entry --></label>
+            <section>Time entry</section>
+        </sections>
+        <sections>
+            <label><!-- Timesheet Status --></label>
+            <section>Timesheet Status</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Details are needed if the type of the timesheet is &apos;Other; --></errorMessage>
+        <name>Check_for_Details_if_Type_is_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date has to be greater than the Start Date --></errorMessage>
+        <name>End_Date_later_than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The hour rate can&apos;t be greater than 100 --></errorMessage>
+        <name>Hour_Rate_under_100</name>
+    </validationRules>
+</CustomObjectTranslation>

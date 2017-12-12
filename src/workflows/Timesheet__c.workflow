@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval</fullName>
+        <description>Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Aproved_Timesheet</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection</fullName>
+        <description>Rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Rejected_Timesheet</template>
+    </alerts>
+    <alerts>
+        <fullName>Timesheet_information</fullName>
+        <description>Timesheet information</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Timesheet_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Timesheet_Status__c</field>
+        <literalValue>APPROVED</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Not_Approved</fullName>
+        <field>Timesheet_Status__c</field>
+        <literalValue>REJECTED</literalValue>
+        <name>Status Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Submitted</fullName>
+        <field>Submitted__c</field>
+        <literalValue>1</literalValue>
+        <name>Status Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Submitted_2</fullName>
+        <field>Timesheet_Status__c</field>
+        <literalValue>SUBMITTED</literalValue>
+        <name>Status Submitted 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted</fullName>
+        <field>Timesheet_Status__c</field>
+        <literalValue>SUBMITTED</literalValue>
+        <name>Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>
