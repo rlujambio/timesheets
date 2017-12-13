@@ -4,4 +4,5 @@
     <label>Timesheets</label>
     <tab>Timesheet__c</tab>
     <tab>standard-Contact</tab>
+    <tab>Employee_s_Timesheets</tab>
 </CustomApplication>

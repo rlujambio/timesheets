@@ -9,6 +9,10 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
+        <name>Employee_s_Timesheets</name>
+        <type>CustomTab</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>Dashboards</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>

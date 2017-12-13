@@ -320,4 +320,16 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Back</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Back</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>{!  URLFOR(&quot;/apex/OrgTimesheets&quot;, null, [id=Contact.Id]) }</url>
+    </webLinks>
 </CustomObject>

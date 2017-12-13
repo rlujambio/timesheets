@@ -1,0 +1,38 @@
+<apex:page controller="CustomListController" >
+    
+    <style type="text/css">
+        .A { background-color: 	#ADD8E6 } 
+        .B { background-color: 	#FFFFFF }
+    </style>
+    
+    <apex:form >       
+        
+    	<apex:pageBlock title="Employees Timesheets" id="timesheet_list">
+            Filter: 
+            <apex:selectList value="{! filter}" size="1">
+                <apex:selectOption itemValue="All" itemLabel="All"></apex:selectOption>
+                <apex:selectOption itemValue="Most Recent" itemLabel="Most Recent"></apex:selectOption>
+                <apex:actionSupport event="onchange" action="{! refresh}" reRender="timesheet_list"/>
+            </apex:selectList>
+            
+            <apex:pageBlockTable value="{! timesheets}" var="ts" rowClasses="A,B">
+                <apex:column value="{! ts.Contact__c}"/>
+                <apex:column headerValue="Timesheet Name">
+                    <apex:outputLink value="{! URLFOR($Action.Timesheet__c.View, ts.Id) }" >
+                        {! ts.Name}
+                    </apex:outputLink>
+                </apex:column>
+                <apex:column value="{! ts.Start_Date__c}"/>
+                <apex:column value="{! ts.End_Date__c}"/>
+                <apex:column value="{! ts.Total_Hours__c}"/>
+                <apex:column value="{! ts.Gross_Pay__c}"/>
+                <apex:column value="{! ts.Taxes__c}"/>
+                <apex:column value="{! ts.Type__c}"/>
+                <apex:column value="{! ts.Submitted__c}"/>
+            </apex:pageBlockTable>
+    	</apex:pageBlock>
+    </apex:form>
+    
+
+    
+</apex:page>
