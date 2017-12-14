@@ -94,7 +94,7 @@
             <name>Timesheet_Status_to_Submitted</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Timesheet__c.Submitted__c</field>
             <operation>equals</operation>
