@@ -78,6 +78,14 @@
         <apexClass>TimesheetsController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>timesheetBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>timesheetSchedule</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -1634,6 +1642,10 @@
     </objectPermissions>
     <pageAccesses>
         <apexPage>OrgTimesheets</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>OrgTimesheetsPDF</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

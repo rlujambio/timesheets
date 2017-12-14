@@ -32,7 +32,31 @@
             <name>myRule_1</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>formula_myRule_1</leftValueReference>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Submitted__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -44,12 +68,7 @@
             <label>Timesheet submitted</label>
         </rules>
     </decisions>
-    <formulas>
-        <name>formula_myRule_1</name>
-        <dataType>Boolean</dataType>
-        <expression>true</expression>
-    </formulas>
-    <interviewLabel>Change_to_Submitted-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Change_to_Submitted-2_InterviewLabel</interviewLabel>
     <label>Change to Submitted</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -72,7 +91,7 @@
     <processMetadataValues>
         <name>TriggerType</name>
         <value>
-            <stringValue>onCreateOnly</stringValue>
+            <stringValue>onAllChanges</stringValue>
         </value>
     </processMetadataValues>
     <processType>Workflow</processType>
@@ -96,7 +115,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Set Status to Submitted</label>
+        <label>Set status as Submitted</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <filters>

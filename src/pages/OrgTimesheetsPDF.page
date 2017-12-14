@@ -1,11 +1,15 @@
-<apex:page controller="CustomListController" >
+<apex:page controller="CustomListController" applyBodyTag="false" renderAs="pdf">
     
-    <style type="text/css">
+    <head>
+        <style type="text/css">
         .A { background-color: 	#ADD8E6 } 
         .B { background-color: 	#FFFFFF }
-    </style>    
+    </style>  
+    </head>
     
-    <apex:form >       
+    <body>
+        
+        <apex:form >       
         
     	<apex:pageBlock title="Employees Timesheets" id="timesheet_list">
             Filter: 
@@ -40,5 +44,7 @@
             </apex:pageBlockTable>
     	</apex:pageBlock>
     </apex:form>
+        
+    </body>   
     
 </apex:page>

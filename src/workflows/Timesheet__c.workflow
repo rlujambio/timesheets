@@ -79,4 +79,27 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Timesheet_Status_to_Submitted</fullName>
+        <field>Timesheet_Status__c</field>
+        <literalValue>SUBMITTED</literalValue>
+        <name>Timesheet Status to Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set as Submitted</fullName>
+        <actions>
+            <name>Timesheet_Status_to_Submitted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Timesheet__c.Submitted__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>
